@@ -10,6 +10,7 @@
 * ========================================
 	* for style sheet in link tag add this 
 * ========================================
+
 * <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
 * 1st open setting add app name 
 * ========================================
