@@ -8,12 +8,10 @@
   * in head tag add below 
   * {% load static %}
 * ========================================
-	* for style sheet in link tag add this 
-* ========================================
-
+* for style sheet in link tag add this 
 * <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+
 * 1st open setting add app name 
-* ========================================
 * INSTALLED_APPS['myapp']
 
 
