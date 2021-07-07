@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	
+</head>
+<body>
+<ul>
+  <li><a class="active" href="{% url 'home' %}">Home</a></li>
+  <li><a href="{% url 'home' %}">News</a></li>
+  <li><a href="{% url 'Contact' %}">Contact</a></li>
+  <li><a href="{% url 'home' %}">About</a></li>
+</ul>
+
+<div class="row">
+  <div class="column">
+    <h2>Column</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+  </div>
+  
+  <div class="column">
+    <h2>Column</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+  </div>
+  
+  <div class="column">
+    <h2>Column</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <h2>Column</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+  </div>
+  
+  <div class="column">
+    <h2>Column</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+  </div>
+  
+  <div class="column">
+    <h2>Column</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+  </div>
+</div>
+
+<div class="contain">
+<h3>Difference between display:none and visiblity: hidden</h3>
+
+<div class="imgbox" id="imgbox1">Box 1<br>
+  <img src="https://source.unsplash.com/400x400/?mobile,mobile" alt="Italy" style="width:100%">
+  <button onclick="removeElement()">Remove</button>
+</div>
+
+<div class="imgbox" id="imgbox2">Box 2<br>
+  <img src="https://source.unsplash.com/400x400/?blue,sea" alt="Lights" style="width:100%">
+  <button onclick="changeVisibility()">Hide</button>
+</div>
+
+<div class="imgbox">Box 3<br>
+  <img src="https://source.unsplash.com/400x400/?fruits,apple" alt="Forest" style="width:100%">
+  <button onclick="resetElement()">Reset All</button>
+</div>
+</div>
+<script>
+function removeElement() {
+  document.getElementById("imgbox1").style.display = "none";
+}
+
+function changeVisibility() {
+  document.getElementById("imgbox2").style.visibility = "hidden";
+}
+
+function resetElement() {
+  document.getElementById("imgbox1").style.display = "block";
+  document.getElementById("imgbox2").style.visibility = "visible";
+}
+
+
+</script>
+
+</body>
+</html>
