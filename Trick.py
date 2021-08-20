@@ -1,18 +1,18 @@
-# from win32com.client import Dispatch
-# def speak(string):
-# 	said=Dispatch("SAPI.Spvoice")
-# 	said.speak(string)
-# # a ="""Lorem Ipsum is simply dummy text of the printing
-# #  and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
-# #   since the 1500s, when an unknown printer took a galley of type and scrambled it to make
-# #    a type specimen book. It has survived not only five centuries, but also the leap into
-# #     electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
-# #      with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
-# #       with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."""
-# s=input("Give a sentance to speak:")
-# # s=a
+from win32com.client import Dispatch
+def speak(string):
+	said=Dispatch("SAPI.Spvoice")
+	said.speak(string)
+# a ="""Lorem Ipsum is simply dummy text of the printing
+#  and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
+#   since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+#    a type specimen book. It has survived not only five centuries, but also the leap into
+#     electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+#      with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+#       with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."""
+s=input("Give a sentance to speak:")
+# s=a
 
-# speak(s)
+speak(s)
 
 
 # calendar using python 
@@ -20,12 +20,12 @@
 # year =2021
 # print(calendar.calendar(year))
 
-# # Decimal to binary 
+# # # Decimal to binary 
 # decNum =int(input("number :"))
 # binNum = bin(decNum)
 # print(binNum[2:])
 
-# binary  to Decimal
+# # binary  to Decimal
 # binNum =int(input("number :"))
 # decNum = int(str(binNum),2)
 # print(decNum)
@@ -57,6 +57,8 @@
 
 # # now we will store the profiles data in "data" variable by 
 # # running the 1st cmd command using subprocess.check_output
+
+
 # data = subprocess.check_output(['netsh', 'wlan', 'show', 'profiles']).decode('utf-8').split('\n')
 
 # # now we will store the profile by converting them to list
@@ -83,8 +85,8 @@
 
 
 # text_to_handweitting
-import pywhatkit
-pywhatkit.text_to_handwriting(" python is an programing lanuage",rgb=(0,0,255))
+# import pywhatkit
+# pywhatkit.text_to_handwriting(" python is an programing lanuage",rgb=(0,0,255))
 
 
 
