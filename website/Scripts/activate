@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\Smarty\Desktop\python\intro_python\website"
+VIRTUAL_ENV="C:\Users\AMANKHALSA\OneDrive\Desktop\django\intro_python\website"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
