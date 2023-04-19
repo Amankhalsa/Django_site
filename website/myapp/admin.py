@@ -1,5 +1,11 @@
 from django.contrib import admin
 from .models import Member
+from .models import Post
+
+
+class PostModel(admin.ModelAdmin):
+  list_display = ("title", "slug")
+admin.site.register(Post,PostModel)
 
 # Register your models here.
 # admin.site.register(Member)
