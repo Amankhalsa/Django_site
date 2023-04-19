@@ -2,6 +2,8 @@ from django.shortcuts import render
 from django.http import HttpResponse,JsonResponse
 from django.contrib.auth import get_user_model
 
+from django.template import loader
+from .models import Member
 
 # Create your views here.
 def myfunctioncall(request):
@@ -21,3 +23,30 @@ def intro(request,name,age):
 	 }
 
 	return JsonResponse(my_dict)
+
+
+
+
+def members(request):
+  mymembers = Member.objects.all().values()
+  context = {
+    'mymembers': mymembers,
+  }
+  return render(request,"all_members.html",context) 
+
+
+def details(request, id):
+  mymember = Member.objects.get(id=id)
+  template = loader.get_template('details.html')
+  context = {
+    'mymember': mymember,
+  }
+  return HttpResponse(template.render(context, request))
+
+def fruits(request):
+
+  context = {
+    'fruits': ['Apple', 'Banana', 'Cherry'],   
+  }
+#   return JsonResponse(context)
+  return render(request,"template.html",context) 
