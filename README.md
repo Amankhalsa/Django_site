@@ -5,6 +5,7 @@
 * py manage.py runserver
 * py manage.py makemigrations members
 * py manage.py migrate
+* py manage.py createsuperuser
 * py manage.py shell
 # from members.models import Member
 * Member.objects.all()
