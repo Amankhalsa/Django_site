@@ -17,13 +17,15 @@ from django.contrib import admin
 from django.urls import path,include
 from . import views
 urlpatterns = [
+    path('admin/clearcache/', include('clearcache.urls')),
     path('admin/', admin.site.urls),
     path('', views.home, name="home" ),
     path('contact/', views.contact, name="contact"),
-    path('thanks/', views.thanks, name="thank"),
     path('mypage/', views.mypage, name="index"),
     path('about/', views.about, name="about"),
     path('getuser/',views.getUsers,name='getUsers'),
+    path('thankyou/',views.thankyou,name='thankyou'),
+
 
     path('home/', views.home),
     path('',include('myapp.urls'))

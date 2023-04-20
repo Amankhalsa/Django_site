@@ -7,8 +7,9 @@ urlpatterns=[
 	path('members/',views.members,name='members'),
 	path('members/details/<int:id>', views.details, name='details'),
 	path('fruits/', views.fruits, name='fruits'),
+    path('thanks/', views.thanks, name="thank"),
 
-	
+
 
 
 ]

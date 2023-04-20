@@ -11,8 +11,7 @@ def home(request):
     return render(request,"index.html")
 def contact(request):
     return render(request,"contact.html")
-def thanks(request):
-    return render(request,"thx.html")
+
 def mypage(request):
     return render(request,"mypage.html")
 def about(request):
@@ -22,3 +21,6 @@ def about(request):
 def getUsers(request):
     users = User.objects.all()
     return HttpResponse(f'<h1>This is a http response</h1>{len(users)}')
+def thankyou(request):
+
+  return render(request,"thx.html")
